@@ -1,0 +1,9 @@
+{
+	"name": "blob-storage-to-Azure-sql",
+	"location": "centralus",
+	"identity": {
+		"type": "SystemAssigned",
+		"principalId": "a52b5942-cc71-4589-b2e3-4702054706ec",
+		"tenantId": "6c11cbd5-982a-42f8-b53f-5ccfac7db2ab"
+	}
+}

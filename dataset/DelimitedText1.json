@@ -1,0 +1,53 @@
+{
+	"name": "DelimitedText1",
+	"properties": {
+		"linkedServiceName": {
+			"referenceName": "bloblinkedservice",
+			"type": "LinkedServiceReference"
+		},
+		"annotations": [],
+		"type": "DelimitedText",
+		"typeProperties": {
+			"location": {
+				"type": "AzureBlobStorageLocation",
+				"fileName": "Batch.csv",
+				"container": "input"
+			},
+			"columnDelimiter": ",",
+			"escapeChar": "\\",
+			"firstRowAsHeader": true,
+			"quoteChar": "\""
+		},
+		"schema": [
+			{
+				"name": "Display name",
+				"type": "String"
+			},
+			{
+				"name": "First name",
+				"type": "String"
+			},
+			{
+				"name": "Last name",
+				"type": "String"
+			},
+			{
+				"name": "Last password change time stamp",
+				"type": "String"
+			},
+			{
+				"name": "Object Id",
+				"type": "String"
+			},
+			{
+				"name": "Usage location",
+				"type": "String"
+			},
+			{
+				"name": "User principal name",
+				"type": "String"
+			}
+		]
+	},
+	"type": "Microsoft.DataFactory/factories/datasets"
+}
